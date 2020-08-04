@@ -18,6 +18,16 @@ var orm = {
           }
           cb(result);
         });
+    },
+    // An example of objColVals would be {name: panther, sleepy: true}
+    updateOne: function(table, colToChange, newVal, condCol, conVal, cb) {
+        var query = "UPDATE ?? SET ?? = ? WHERE ?? = ?";
+        connection.query(query, [table, colToChange, newVal, condCol, conVal], function(err, result) {
+          if (err) {
+            throw err;
+          }
+          cb(result);
+        });
       },
       
     
