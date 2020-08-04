@@ -10,6 +10,16 @@ var orm = {
         cb(result);
       });
     },
+    insertOne: function(table, col, val, cb) {
+        var query = "INSERT INTO ?? (??) VALUES (?)";
+        connection.query(query, [table, col, val], function(err, result) {
+          if (err) {
+            throw err;
+          }
+          cb(result);
+        });
+      },
+      
     
 
 };
