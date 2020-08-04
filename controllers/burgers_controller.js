@@ -13,7 +13,7 @@ router.get("/", function(req, res) {
 
 router.post("/", function(req, res) {
     if(req.body.burger_name != "") {
-        burger.insertOne(req.body.burger_name.toString().trim(), function(result) {
+        burger.insertOne(req.body.burger_name.trim(), function(result) {
             res.redirect("/");
         });
     }
