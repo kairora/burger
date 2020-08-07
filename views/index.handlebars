@@ -1,13 +1,17 @@
 <h1>Eat-Da-Burger!</h1>
 
 <div class="uneaten">
+    <h2>Burgers on Da Menu!</h2> 
     <ol>
         {{#each burgers}}
             {{#unless this.devoured}}
                 <li>
-                    <form action="/{{this.id}}?_method=PUT" method="POST">
-                        {{this.burger_name}}
-                        <button type="submit" value="0" >Devour It! Nom!</button>
+                    <form action="/" method="POST" role="form" enctype="multipart/form-data">
+                        <div> 
+                            {{this.burger_name}}
+                            <input input type="hidden" class="burger_id" type="text" value={{this.id}}><br>
+                            <button type="submit" >Devour It! Nom!</button>
+                        </div>
                     </form>
                 </li>
             {{/unless}}
@@ -17,6 +21,7 @@
 
 
 <div class="eaten">
+    <h2>Burger Heaven!</h2> 
     {{#each burgers}}
         {{#if this.devoured}}
             <form action="/" method="POST">
@@ -27,10 +32,11 @@
     {{/each}}
 </div>
 
+<h2>In the Kitchen!</h2> 
 <form id="addABurger" action="/" method="POST">
     <div class="form-group">
         <textarea class="userBurger" name="burger_name" placeholder="Gimme a burger!"></textarea>
         <button type="submit">Submit</button>
-        <p>Enter the name of a buger you want to eat and click the "submit" button to add it to the menu!" </p>
+        <p>Enter the name of a burger you want to eat and click the "submit" button to add it to the menu!" </p>
   </div>
 </form>

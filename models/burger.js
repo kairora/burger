@@ -6,7 +6,7 @@ let burger= {
             cb(res);
         });
     },
-    insertOne: function(bVal, cb) {
+    insertOne: function(col, bVal, cb) {
         orm.insertOne("burgers", "burger_name", bVal, function(res) {
             cb(res);
         });
@@ -16,7 +16,6 @@ let burger= {
             cb(res);
         });
     },
-    
 }
 
 module.exports = burger;

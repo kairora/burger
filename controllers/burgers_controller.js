@@ -12,11 +12,14 @@ router.get("/", function(req, res) {
 });
 
 router.post("/", function(req, res) {
-    if(req.body.burger_name != "") {
-        burger.insertOne(req.body.burger_name.trim(), function(result) {
-            res.redirect("/");
-        });
-    }
+    console.log("Line 15: Brianna " + JSON.stringify(req.body.burger_name))
+    res.redirect("/")
+    // res.end()
+    // if(req.body.burger_name != "") {
+    //     burger.insertOne(req.body.burger_name.trim(), function(result) {
+    //         res.redirect("/");
+    //     });
+    // }
 });
   
 router.put("/:id", function(req, res) {
