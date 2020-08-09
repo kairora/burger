@@ -5,15 +5,7 @@
     <ol>
         {{#each burgers}}
             {{#unless this.devoured}}
-                <li>
-                    <form action="/" method="POST" role="form" enctype="multipart/form-data">
-                        <div> 
-                            {{this.burger_name}}
-                            <input input type="hidden" class="burger_id" type="text" value={{this.id}}><br>
-                            <button type="submit" >Devour It! Nom!</button>
-                        </div>
-                    </form>
-                </li>
+                {{> burgers/burger-block devoured=true}}
             {{/unless}}
         {{/each}}
     </ol>
@@ -24,19 +16,19 @@
     <h2>Burger Heaven!</h2> 
     {{#each burgers}}
         {{#if this.devoured}}
-            <form action="/" method="POST">
-                    <input placeholder="{{this.id}}. {{this.burger_name}}" />
-                <button >Update Burger</button>
-            </form>
+            {{> burgers/burger-block devoured=false}}
         {{/if}}
     {{/each}}
 </div>
 
 <h2>In the Kitchen!</h2> 
-<form id="addABurger" action="/" method="POST">
+<form class="create-form">
+
     <div class="form-group">
-        <textarea class="userBurger" name="burger_name" placeholder="Gimme a burger!"></textarea>
-        <button type="submit">Submit</button>
+        <input class="userBurger" id="bu" placeholder="Gimme a burger!"></input>
+        <button type="submit" id="newburgBtn">Submit</button>
         <p>Enter the name of a burger you want to eat and click the "submit" button to add it to the menu!" </p>
-  </div>
-</form>
+    </div>
+</form> 
+
+

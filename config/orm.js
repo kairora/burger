@@ -19,9 +19,10 @@ const orm = {
           cb(result);
         });
     },
-    updateOne: function(table, colToChange, newVal, condCol, conVal, cb) {
-        const query = "UPDATE ?? SET ?? = ? WHERE ?? = ?";
-        connection.query(query, [table, colToChange, newVal, condCol, conVal], function(err, result) {
+    updateOne: function(table, devoured, cond, cb) {
+        const query = `UPDATE ${table} SET devoured = ${devoured} WHERE ${cond}`;
+        console.log(query)
+        connection.query(query, function(err, result) {
           if (err) {
             throw err;
           }
