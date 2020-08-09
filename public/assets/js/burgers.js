@@ -6,10 +6,6 @@ $( document ).ready(function() {
       let devState = {
           devoured: newDevoured
       }
-        
-      
-      
-    //   console.log("devoured is " + typeof(newDevoured) )
 
         console.log(id)
       $.ajax("/api/burgers/" + id, {

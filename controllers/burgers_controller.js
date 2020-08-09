@@ -20,20 +20,6 @@ router.post("/api/burgers", function(req, res) {
       res.redirect("/")
     });
 });
-  
-// router.put("/api/burgers/:id", function(req, res) {
-//     let cond = "id = " + req.params.id;
-//     console.log("condition", cond); 
-  
-//     burger.updateOne(cond, function(result) {
-//         if (result.changedRows == 0) {
-//             // If no rows were changed, then the ID must not exist, so 404
-//             return res.status(500).end();
-//           } else {
-//             res.status(200).end();
-//           }
-//     });
-// });
 
 router.put("/api/burgers/:id", function(req, res) {
     let cond = "id = " + req.params.id;
