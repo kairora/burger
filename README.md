@@ -1,5 +1,5 @@
 
-# Eat-Da-Burger
+# Eat-Da-Burger!
 ![ISC license](https://img.shields.io/badge/License-ISC-blue.svg) 
 
 ## Description & Deployment
@@ -44,7 +44,7 @@ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH RE
 If a developer wishes to contribute, please send Brianna an email at the email link below.
 
 
-## Questions
+## Questions & Links
 
 You can visit my [Github Profile](https://www.github.com/kairora) or [this app's Github repo](https://github.com/kairora/burger) to learn more about this CLI.
-Or, if you have questions regarding this CLI program, please [send me an email](mailto:brianna.bullock16@gmail.com). 
+Or, if you have questions regarding this CLI program, please [send me an email](mailto:brianna.bullock16@gmail.com) or [visit my portfolio](https://kairora.github.io/Bullock-Portfolio/index.html). 
