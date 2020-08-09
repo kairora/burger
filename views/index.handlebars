@@ -1,34 +1,61 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+                <img class="topImg mx-auto" src="../assets/img/burgerimg.webp" alt="Burger Image" width="350" >
+        </div>
+    </div>
+</div>
+
 <h1>Eat-Da-Burger!</h1>
 
-<div class="uneaten">
-    <h2>Burgers on Da Menu!</h2> 
-    <ol>
-        {{#each burgers}}
-            {{#unless this.devoured}}
-                {{> burgers/burger-block devoured=true}}
-            {{/unless}}
-        {{/each}}
-    </ol>
-</div>
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="uneaten">
+                <h2>Burgers on Da Menu!</h2> 
+                <ol>
+                    {{#each burgers}}
+                        {{#unless this.devoured}}
+                            {{> burgers/burger-block devoured=true}}
+                        {{/unless}}
+                    {{/each}}
+                </ol>
+            </div>
+        </div>
 
-
-<div class="eaten">
-    <h2>Burger Heaven!</h2> 
-    {{#each burgers}}
-        {{#if this.devoured}}
-            {{> burgers/burger-block devoured=false}}
-        {{/if}}
-    {{/each}}
-</div>
-
-<h2>In the Kitchen!</h2> 
-<form class="create-form">
-
-    <div class="form-group">
-        <input class="userBurger" id="bu" placeholder="Gimme a burger!"></input>
-        <button type="submit" id="newburgBtn">Submit</button>
-        <p>Enter the name of a burger you want to eat and click the "submit" button to add it to the menu!" </p>
+        <div class="col-md-6">
+            <div class="eaten">
+                <h2>Burger Heaven!</h2>
+                <ol>
+                    {{#each burgers}}
+                        {{#if this.devoured}}
+                            {{> burgers/burger-block devoured=false}}
+                        {{/if}}
+                    {{/each}}
+                </ol> 
+            </div>
+        </div>
     </div>
-</form> 
+</div>
+
+<div class="container">  
+    <h2>In the Kitchen!</h2>
+    <div class="row">
+        
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            
+            <form class="create-form mx-auto">
+                <div class="form-group form-row align-items-center">
+                    <input class="userBurger mx-auto" id="bu" placeholder="Gimme a burger!"></input>
+                    <button type="submit" class="mx-auto" id="newburgBtn">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4"></div>
+        <p class="mx-auto">Enter the name of a burger you want to eat and click the "submit" button to add it to the menu! </p>
+    </div>
+</div>
 
 

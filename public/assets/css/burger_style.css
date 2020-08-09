@@ -1,0 +1,40 @@
+body {
+    background-color: #ffa37e; 
+}
+
+.topImg {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+h1, h2 {
+    text-align: center;
+    color: rgba(255, 60, 0, 0.733);
+}
+h2 {
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+button {
+    background-color: rgb(124, 50, 24);
+    color: rgb(255, 187, 0);
+    font-weight: bold;
+    margin-left: 20px;
+    
+}
+
+li {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(199, 5, 5);
+    
+}
+
+p {
+    font-size: 25px;
+    font-weight: 600;
+    
+    
+}
