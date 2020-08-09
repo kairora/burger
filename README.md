@@ -4,7 +4,7 @@
 
 ## Description & Deployment
 This app allows a user to enter the name of a burger they want to eat and add it to a menu. When the user is ready to serve the burger, it will move off the menu and into the Burger Heaven.
-[VIEW THE DEPLOYED APP HERE](./public/assets/img/app-img.PNG)
+[VIEW THE DEPLOYED APP HERE](https://lit-meadow-28026.herokuapp.com/)
 
 ![Eat Da Burger App Image](./public/assets/img/app-img.PNG)
 
@@ -20,7 +20,7 @@ This app allows a user to enter the name of a burger they want to eat and add it
 ---
 
 ## Installation
-1. Install mysql and express, and express-handlebars
+Install mysql and express, and express-handlebars
 
 ## Usage
 After installing all the packages, the user can run
